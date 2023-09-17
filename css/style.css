@@ -49,6 +49,11 @@ img {
     position: fixed;
     top: 0px;
     padding: 0 30px;
+    transition: 0.5s;
+}
+
+.navbar.top{
+    background: transparent;
 }
 
 .navbar .logo {
@@ -156,6 +161,65 @@ img {
     color: #28a745;
 }
 
-.footer .social > * {
+.footer .social>* {
     margin-right: 30px;
 }
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .toll-truck-hero .navbar {
+        flex-direction: column;
+        height: 120px;
+        padding: 20px;
+    }
+
+   .toll-truck-heroк .navbar a {
+        padding: 10px 10px;
+        margin: 0 3px;
+    }
+
+    .flex-items {
+        flex-direction: column;
+    }
+
+    .flex-items {
+        flex-direction: column;
+    }
+
+    .cases .column,
+    .flex-grid .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* @media (max-width: 400px) {
+
+    .toll-truck-hero .navbar {
+        flex-direction: column;
+        height: 120px;
+        padding: 20px;
+    }
+
+   .toll-truck-heroк .navbar a {
+        padding: 10px 10px;
+        margin: 0 3px;
+    }
+
+    .flex-items {
+        flex-direction: column;
+    }
+
+    .flex-items {
+        flex-direction: column;
+    }
+
+    .cases .column,
+    .flex-grid .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+} */

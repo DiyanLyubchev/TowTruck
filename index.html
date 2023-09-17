@@ -15,7 +15,7 @@
 
 <body id="home">
     <header class="toll-truck-hero">
-        <div id="navbar" class="navbar">
+        <div id="navbar" class="navbar top">
             <h1 class="logo">
                 <span class="text-primary"><i class="fa-solid fa-truck"></i> ПЪТНА</span>ПОМОЩ
             </h1>
@@ -24,7 +24,7 @@
                     <li><a href="#home">Начало</a></li>
                     <li><a href="#about">Услуги</a></li>
                     <li><a href="#cases">Каталог снимки</a></li>
-                    <li><a href="tel://+359899112040"><i class="fa-solid fa-phone"></i> +359(0)899112040</a></li>
+                    <li><a href="tel://+359899112040"><i class="fa-solid fa-phone"></i> +359899112040</a></li>
                 </ul>
             </nav>
         </div>
@@ -65,8 +65,6 @@
                             за повдигане на втори автомобил.</p>
                     </div>
                 </div>
-            </div>
-            <!-- <div class="flex-items">
                 <div>
                     <i class="fas fa-car fa-2x"></i>
                     <div>
@@ -85,14 +83,10 @@
                     <i class="fas fa-car fa-2x"></i>
                     <div>
                         <h3>Репатрак</h3>
-                        <p>Транспортни услуги за автомобили, строителна техника и д.р. до 4 т. 
-                            Транспортни услуги във Варна и страната.</p>
+                        <p>Транспортни услуги за автомобили, строителна техника и др до 5 тона</p>
                     </div>
                 </div>
-            </div> -->
-
-
-
+            </div>
         </section>
 
         <!-- pictures -->
@@ -144,11 +138,51 @@
 
     <footer class="footer bg-dark">
         <div class="social">
-            <a href="https://www.facebook.com/patnapomostvarna" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-            <a href="tel://+359899112040"><i class="fa-solid fa-phone fa-2x"></i>Телефон: +359(0)899112040</a>
+            <a href="https://www.facebook.com/patnapomostvarna" target="_blank"><i
+                    class="fab fa-facebook fa-2x"></i></a>
+            <a href="tel://+359899112040"><i class="fa-solid fa-phone fa-2x"></i>Телефон: +359899112040</a>
         </div>
         <p>Copyrigth &copy; 2023 TollTruck</p>
     </footer>
-</body>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled = false;
+
+        window.onscroll = function () {
+            if (window.pageYOffset > 100) {
+                navbar.classList.remove('top');
+
+                if (!scrolled) {
+                    navbar.style.transform = 'translateY(-70px)';
+                }
+                setTimeout(function () {
+                    navbar.style.transform = 'translateY(0)';
+                    scrolled = true;
+                }, 200);
+            } else {
+                navbar.classList.add('top');
+                scroled = false;
+            };
+        };
+
+        $('#navbar a, .btn').click(function (e) {
+            if (this.hash !== '') {
+                e.preventDefault();
+
+                const hash = this.hash;
+
+                $('html, body').animate(
+                    {
+                        scrollTop: $(hash).offset().top - 100,
+                    },
+                    800
+                )
+            }
+        });
+    </script>
+</body>
 </html>
