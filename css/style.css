@@ -52,12 +52,13 @@ img {
     transition: 0.5s;
 }
 
-.navbar.top{
+.navbar.top {
     background: transparent;
 }
 
 .navbar .logo {
-    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
 }
 
 .navbar a {
@@ -175,7 +176,7 @@ img {
         padding: 20px;
     }
 
-   .toll-truck-heroк .navbar a {
+    .toll-truck-heroк .navbar a {
         padding: 10px 10px;
         margin: 0 3px;
     }

@@ -4,10 +4,6 @@
     color: #28a745;
 }
 
-.text-secondary {
-    color: #0284d0
-}
-
 /* Buttons */
 
 .btn {
@@ -24,25 +20,11 @@
     opacity: 0.9;
 }
 
-.btn-primary,
-.bg-primary {
-    background: #28a745;
-    color: #fff;
-}
-
-.btn-secondary,
-.bg-secondary {
-    background: #0284d0;
-    color: #fff;
-}
-
-.btn-dark,
 .bg-dark {
     background: #333;
     color: #fff;
 }
 
-.btn-ligth,
 .bg-ligth {
     background: #f4f4f4;
     color: #333;
