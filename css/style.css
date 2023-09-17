@@ -197,17 +197,16 @@ img {
 }
 
 
-/* @media (max-width: 400px) {
-
+@media (max-width: 500px) {
     .toll-truck-hero .navbar {
         flex-direction: column;
-        height: 120px;
-        padding: 20px;
+        height: 80px;
+        padding: 10px;
     }
 
    .toll-truck-heroк .navbar a {
-        padding: 10px 10px;
-        margin: 0 3px;
+        padding: 5px 5px;
+        margin: 0 1px;
     }
 
     .flex-items {
@@ -223,4 +222,4 @@ img {
         flex: 100%;
         max-width: 100%;
     }
-} */
+}
