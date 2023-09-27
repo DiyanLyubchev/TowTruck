@@ -208,6 +208,16 @@ img {
         flex: 100%;
         max-width: 100%;
     }
+
+    .toll-truck-hero h1 {
+        font-size: 38px;
+    }
+    
+    .toll-truck-hero p {
+        font-size: 18px;
+        max-width: 500px;
+        margin: 20px 0 30px;
+    }
 }
 
 
@@ -231,5 +241,15 @@ img {
     .flex-grid .column {
         flex: 100%;
         max-width: 100%;
+    }
+
+    .toll-truck-hero h1 {
+        font-size: 35px;
+    }
+    
+    .toll-truck-hero p {
+        font-size: 15px;
+        max-width: 500px;
+        margin: 20px 0 30px;
     }
 }
