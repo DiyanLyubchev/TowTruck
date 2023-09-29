@@ -164,7 +164,12 @@ img {
 }
 
 .footer .social>* {
-    margin-right: 30px;
+    margin-right: 20px;
+}
+
+.contacts {
+    font-weight: bold;
+    font-size: 25px;
 }
 
 /*Phone icon*/
@@ -215,7 +220,7 @@ img {
         padding: 20px;
     }
 
-    .toll-truck-heroк .navbar a {
+    .toll-truck-hero .navbar a {
         padding: 10px 10px;
         margin: 0 3px;
     }
@@ -239,6 +244,15 @@ img {
         max-width: 500px;
         margin: 20px 0 30px;
     }
+
+    .social {
+        display: flex;
+        flex-direction: row;
+      }
+    
+      .social > a {
+        margin-right: 10px;
+      }
 }
 
 
@@ -249,7 +263,7 @@ img {
         padding: 10px;
     }
 
-    .toll-truck-heroк .navbar a {
+    .toll-truck-hero .navbar a {
         padding: 2px 2px;
         margin: 0 1px;
     }
@@ -273,4 +287,18 @@ img {
         max-width: 500px;
         margin: 20px 0 30px;
     }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .footer {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .social {
+        margin-bottom: 10px;
+      }
 }
