@@ -255,7 +255,6 @@ img {
       }
 }
 
-
 @media (max-width: 500px) {
     .toll-truck-hero .navbar {
         flex-direction: column;
