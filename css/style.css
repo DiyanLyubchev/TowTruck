@@ -10,6 +10,87 @@
     margin: 0;
 }
 
+/*utilities*/
+/* Text colors */
+
+.text-primary {
+    color: var(--green);
+}
+
+/* Buttons */
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    color: var(--white);
+    background-color: var(--green);
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.bg-dark {
+    background: var(--darck);
+    color: var(--white);
+}
+
+.bg-ligth {
+    background: var(--white);
+    color: var(--darck);
+}
+
+/* Flex items */
+
+.flex-items {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.flex-items>div {
+    padding: 20px;
+}
+
+/* Section header */
+
+.section-header {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.section-padding {
+    padding: 20px 20px 40px;
+}
+
+/* Flex grid */
+
+.flex-grid .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.flex-grid .column {
+    flex: 20%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     background: var(--white);
@@ -308,84 +389,3 @@ img {
 }
 
 
-/*utilities*/
-
-/* Text colors */
-
-.text-primary {
-    color: var(--green);
-}
-
-/* Buttons */
-
-.btn {
-    cursor: pointer;
-    display: inline-block;
-    padding: 10px 30px;
-    color: var(--white);
-    background-color: var(--green);
-    border: none;
-    border-radius: 5px;
-}
-
-.btn:hover {
-    opacity: 0.9;
-}
-
-.bg-dark {
-    background: var(--darck);
-    color: var(--white);
-}
-
-.bg-ligth {
-    background: var(--white);
-    color: var(--darck);
-}
-
-/* Flex items */
-
-.flex-items {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-}
-
-.flex-items>div {
-    padding: 20px;
-}
-
-/* Section header */
-
-.section-header {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.section-header h2 {
-    font-size: 40px;
-    margin: 20px 0;
-}
-
-.section-padding {
-    padding: 20px 20px 40px;
-}
-
-/* Flex grid */
-
-.flex-grid .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-
-.flex-grid .column {
-    flex: 20%;
-    max-width: 25%;
-    padding: 0 4px;
-}
