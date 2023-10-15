@@ -279,6 +279,11 @@ img {
     animation-delay: 2s;
 }
 
+.phone-link {
+    font-size: 20px;
+    color: red;
+}
+
 @keyframes flash {
     0% {
         visibility: visible;
